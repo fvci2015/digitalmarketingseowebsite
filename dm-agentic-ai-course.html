@@ -1,0 +1,2884 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Marketing & SEO with Agentic AI — Future Vision Computer Institute</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<style>
+
+/* ========== BROCHURE PDF (hidden, print-only) ========== */
+#brochure-print {
+  display: none;
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background: #fff;
+  width: 794px;
+  padding: 0;
+}
+
+#brochure-print * { box-sizing: border-box; }
+
+.br-page {
+  width: 794px;
+  min-height: 1123px;
+  padding: 48px 52px;
+  position: relative;
+  page-break-after: always;
+}
+
+.br-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 3px solid #2563eb;
+}
+
+.br-logo-block .br-institute {
+  font-size: 13px;
+  font-weight: 800;
+  color: #2563eb;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.br-logo-block .br-est {
+  font-size: 11px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.br-badge {
+  background: #2563eb;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+
+.br-hero-title {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #0a0e1a;
+  margin-bottom: 10px;
+}
+
+.br-hero-title span { color: #2563eb; }
+
+.br-tagline {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 28px;
+  max-width: 580px;
+}
+
+.br-stats-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.br-stat {
+  background: #eff6ff;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-align: center;
+  flex: 1;
+  min-width: 100px;
+}
+
+.br-stat-num {
+  font-size: 22px;
+  font-weight: 900;
+  color: #2563eb;
+  display: block;
+}
+
+.br-stat-label {
+  font-size: 10px;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.br-sec-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #0a0e1a;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  border-left: 4px solid #2563eb;
+}
+
+.br-module-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.br-mod {
+  background: #f9f9fb;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.br-mod-num {
+  font-size: 10px;
+  font-weight: 800;
+  color: #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.br-mod-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 3px;
+}
+
+.br-mod-weeks {
+  font-size: 11px;
+  color: #888;
+}
+
+.br-tools-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.br-tool-tag {
+  background: #f0f0f8;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #444;
+  padding: 5px 10px;
+}
+
+.br-assess-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.br-assess-item {
+  flex: 1;
+  background: #f9f9fb;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  padding: 14px;
+  text-align: center;
+}
+
+.br-assess-pct {
+  font-size: 26px;
+  font-weight: 900;
+  color: #2563eb;
+  display: block;
+}
+
+.br-assess-label {
+  font-size: 11px;
+  color: #555;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.br-why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.br-why-item {
+  background: #f9f9fb;
+  border: 1px solid #dbeafe;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.br-why-icon { font-size: 20px; margin-bottom: 6px; }
+
+.br-why-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 4px;
+}
+
+.br-why-desc {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.br-footer {
+  margin-top: auto;
+  padding-top: 20px;
+  border-top: 2px solid #f0edff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.br-footer-left {
+  font-size: 11px;
+  color: #888;
+  line-height: 1.7;
+}
+
+.br-footer-left strong { color: #333; }
+
+.br-footer-right {
+  background: linear-gradient(135deg, #2563eb, #ff3d8b);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.br-footer-right small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.85;
+  margin-top: 2px;
+}
+
+/* ========== DOWNLOAD BUTTON STYLES ========== */
+.btn-download-brochure {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid rgba(37,99,235,0.6);
+  color: #93c5fd;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-download-brochure:hover {
+  background: rgba(37,99,235,0.12);
+  border-color: var(--purple);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.btn-download-brochure svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.btn-nav-pdf {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.7);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-nav-pdf:hover {
+  border-color: var(--purple);
+  color: #fff;
+  background: rgba(37,99,235,0.15);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg-dark: #0a0e1a;
+  --bg-card: #111827;
+  --bg-card2: #161d2e;
+  --purple: #2563eb;
+  --purple-glow: rgba(37,99,235,0.25);
+  --cyan: #00d4ff;
+  --pink: #ff3d8b;
+  --green: #00e676;
+  --orange: #ff6b35;
+  --yellow: #ffd600;
+  --text: #ffffff;
+  --text-muted: #8b93a7;
+  --text-dim: #4a5568;
+  --border: rgba(255,255,255,0.07);
+  --border-purple: rgba(37,99,235,0.4);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg-dark);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; }
+
+/* ========== UTILS ========== */
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+.container-wide { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+.text-purple { color: var(--purple); }
+.text-cyan { color: var(--cyan); }
+.text-pink { color: var(--pink); }
+.text-green { color: var(--green); }
+.text-orange { color: var(--orange); }
+.text-yellow { color: var(--yellow); }
+.text-muted { color: var(--text-muted); }
+
+.section-pad { padding: 80px 20px; }
+
+/* ========== STICKY BANNER ========== */
+.sticky-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(10,14,26,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.banner-logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  white-space: nowrap;
+}
+
+.banner-cta {
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  display: inline-block;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.banner-cta:hover { opacity: 0.9; transform: translateY(-1px); }
+
+/* ========== TICKER ========== */
+.ticker-wrap {
+  margin-top: 61px;
+  background: linear-gradient(90deg, var(--purple), var(--pink), var(--purple));
+  background-size: 200%;
+  animation: gradshift 4s linear infinite;
+  padding: 10px 0;
+  overflow: hidden;
+}
+
+@keyframes gradshift {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+.ticker-inner {
+  display: flex;
+  gap: 48px;
+  white-space: nowrap;
+  animation: ticker 25s linear infinite;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+@keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ========== HERO ========== */
+.hero {
+  background: var(--bg-dark);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 100px 20px 80px;
+}
+
+/* grid lines */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 40%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 40%, transparent 100%);
+}
+
+/* bottom fade */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--bg-dark));
+  pointer-events: none;
+}
+
+.hero-bg-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 700px;
+  background: radial-gradient(ellipse, rgba(37,99,235,0.32) 0%, rgba(0,212,255,0.08) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+/* extra side glows */
+.hero-bg-glow::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: -200px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,61,139,0.12) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-bg-glow::after {
+  content: '';
+  position: absolute;
+  bottom: 0; right: -200px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(0,212,255,0.10) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(37,99,235,0.12);
+  border: 1px solid var(--border-purple);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #93c5fd;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 28px;
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  background: var(--green);
+  border-radius: 50%;
+  animation: blink 1.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(32px, 6vw, 64px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+  color: #fff;
+}
+
+.hero h1 .highlight {
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2.5vw, 20px);
+  color: var(--text-muted);
+  max-width: 620px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+.hero-sub strong { color: #fff; }
+
+/* STAT PILLS */
+.stat-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.stat-pill {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.pill-num {
+  font-size: 18px;
+  font-weight: 900;
+  background: linear-gradient(90deg, var(--cyan), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.pill-label { color: var(--text-muted); font-size: 13px; }
+
+/* CTA GROUP */
+.hero-cta-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.btn-hero {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--purple), var(--pink));
+  color: #fff;
+  text-decoration: none;
+  padding: 18px 48px;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 40px rgba(37,99,235,0.4);
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 50px rgba(37,99,235,0.6);
+}
+
+.hero-micro {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.hero-micro span { color: var(--green); }
+
+/* ========== SOCIAL PROOF BAR ========== */
+.proof-bar {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 24px 20px;
+}
+
+.proof-bar-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.proof-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.proof-icon { font-size: 20px; }
+
+/* ========== SECTION HEADER ========== */
+.sec-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sec-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--purple);
+  background: rgba(37,99,235,0.1);
+  border: 1px solid rgba(37,99,235,0.3);
+  padding: 4px 14px;
+  border-radius: 100px;
+  margin-bottom: 16px;
+}
+
+.sec-header h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.sec-header p {
+  color: var(--text-muted);
+  font-size: 17px;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ========== AGENTIC AI ========== */
+.agentic-sec { background: var(--bg-dark); }
+
+.agentic-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.cmp-box {
+  background: var(--bg-card);
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid var(--border);
+}
+
+.cmp-box.bad { border-color: rgba(239,68,68,0.25); }
+.cmp-box.good { border-color: rgba(0,230,118,0.25); }
+
+.cmp-label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.cmp-box.bad .cmp-label { background: rgba(239,68,68,0.15); color: #f87171; }
+.cmp-box.good .cmp-label { background: rgba(0,230,118,0.15); color: var(--green); }
+
+.cmp-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+
+.cmp-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.cmp-list li::before { flex-shrink: 0; margin-top: 1px; }
+.cmp-box.bad .cmp-list li::before { content: '✕'; color: #f87171; }
+.cmp-box.good .cmp-list li::before { content: '✓'; color: var(--green); }
+
+/* AI AGENTS GRID */
+.agents-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.agent-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.agent-card:hover { border-color: var(--border-purple); transform: translateY(-3px); }
+
+.agent-emoji {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, rgba(37,99,235,0.25), rgba(0,212,255,0.15));
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.agent-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.agent-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* ========== MODULES ========== */
+.modules-sec { background: var(--bg-card2); }
+
+.mod-list-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mod-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.25s;
+}
+
+.mod-item:hover { border-color: var(--border-purple); }
+
+.mod-trigger {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+.mod-badge-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.mod-title-wrap { flex: 1; min-width: 0; }
+
+.mod-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  display: block;
+  margin-bottom: 3px;
+}
+
+.mod-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+  display: block;
+}
+
+.mod-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.mod-weeks-tag {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 100px;
+  background: rgba(37,99,235,0.12);
+  color: #93c5fd;
+  border: 1px solid rgba(37,99,235,0.25);
+  white-space: nowrap;
+}
+
+.mod-arrow {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-card2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.3s, background 0.3s;
+  flex-shrink: 0;
+}
+
+.mod-item.open .mod-arrow {
+  transform: rotate(180deg);
+  background: var(--purple);
+  color: #fff;
+  border-color: var(--purple);
+}
+
+.mod-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.45s cubic-bezier(0.4,0,0.2,1);
+}
+
+.mod-item.open .mod-body { max-height: 1400px; }
+
+.mod-content {
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.mod-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.mod-section-label {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  margin-bottom: 12px;
+}
+
+.learn-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+
+.learn-list li {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.learn-list li::before {
+  content: '→';
+  color: var(--cyan);
+  font-size: 11px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.agents-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.a-tag {
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(0,212,255,0.1);
+  border: 1px solid rgba(0,212,255,0.25);
+  color: var(--cyan);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.proj-box {
+  background: rgba(0,230,118,0.04);
+  border: 1px solid rgba(0,230,118,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.proj-header {
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  border-bottom: 1px solid rgba(0,230,118,0.12);
+}
+
+.proj-row {
+  padding: 10px 16px;
+  display: flex;
+  gap: 12px;
+  border-bottom: 1px solid rgba(0,230,118,0.08);
+  align-items: flex-start;
+}
+
+.proj-row:last-child { border-bottom: none; }
+
+.proj-n {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0,230,118,0.12);
+  color: var(--green);
+  font-size: 10px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.proj-row strong { font-size: 13px; display: block; margin-bottom: 2px; color: #fff; }
+.proj-row span { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+/* MODULE COLORS */
+.m1 .mod-badge-num { background: rgba(37,99,235,0.2); color: #93c5fd; }
+.m2 .mod-badge-num { background: rgba(255,61,139,0.2); color: var(--pink); }
+.m3 .mod-badge-num { background: rgba(0,212,255,0.2); color: var(--cyan); }
+.m4 .mod-badge-num { background: rgba(0,230,118,0.2); color: var(--green); }
+.m5 .mod-badge-num { background: rgba(255,107,53,0.2); color: var(--orange); }
+.m6 .mod-badge-num { background: rgba(255,214,0,0.2); color: var(--yellow); }
+.m7 .mod-badge-num { background: rgba(37,99,235,0.2); color: #93c5fd; }
+.m8 .mod-badge-num { background: rgba(255,61,139,0.2); color: var(--pink); }
+
+/* ========== TOOLS ========== */
+.tools-sec { background: var(--bg-dark); }
+
+.tools-marquee-wrap {
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+}
+
+.tools-marquee-wrap::before,
+.tools-marquee-wrap::after {
+  content: '';
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 80px;
+  z-index: 2;
+}
+
+.tools-marquee-wrap::before { left: 0; background: linear-gradient(to right, var(--bg-dark), transparent); }
+.tools-marquee-wrap::after { right: 0; background: linear-gradient(to left, var(--bg-dark), transparent); }
+
+.tools-track {
+  display: flex;
+  gap: 12px;
+  animation: marquee 28s linear infinite;
+  width: max-content;
+}
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+.tool-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: border-color 0.2s;
+}
+
+.tool-pill img {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.tool-pill:hover { border-color: var(--border-purple); }
+
+/* ========== CAPSTONE ========== */
+.capstone-sec { background: var(--bg-card2); }
+
+.cap-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cap-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.cap-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+}
+
+.cap-card.ca::before { background: linear-gradient(90deg, var(--purple), var(--pink)); }
+.cap-card.cb::before { background: linear-gradient(90deg, var(--cyan), var(--green)); }
+.cap-card.cc::before { background: linear-gradient(90deg, var(--orange), var(--yellow)); }
+
+.cap-card:hover { transform: translateY(-6px); border-color: var(--border-purple); }
+
+.cap-opt-tag {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 10px;
+}
+
+.ca .cap-opt-tag { color: #93c5fd; }
+.cb .cap-opt-tag { color: var(--cyan); }
+.cc .cap-opt-tag { color: var(--orange); }
+
+.cap-emoji-big { font-size: 36px; margin-bottom: 12px; display: block; }
+
+.cap-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.cap-card p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ========== ASSESSMENT ========== */
+.assess-sec { background: var(--bg-dark); }
+
+.assess-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.assess-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  transition: transform 0.25s;
+}
+
+.assess-card:hover { transform: scale(1.02); }
+
+.assess-pct {
+  font-size: 48px;
+  font-weight: 900;
+  flex-shrink: 0;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.a55 { color: var(--purple); }
+.a25 { color: var(--cyan); }
+.a15 { color: var(--orange); }
+.a5 { color: var(--pink); }
+
+.assess-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+.assess-card p { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* ========== WHY DIFFERENT ========== */
+.why-sec { background: var(--bg-card2); }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.why-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.why-card:hover { border-color: var(--border-purple); transform: translateY(-4px); }
+
+.why-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(37,99,235,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.why-card h4 { font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+.why-card p { font-size: 13px; color: var(--text-muted); line-height: 1.65; }
+
+/* ========== CTA SECTION ========== */
+.cta-sec {
+  background: var(--bg-dark);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-glow-orb {
+  position: absolute;
+  width: 700px;
+  height: 500px;
+  background: radial-gradient(ellipse, rgba(37,99,235,0.22) 0%, transparent 65%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.cta-sec h2 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.cta-sec p {
+  font-size: 18px;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+  position: relative;
+}
+
+.cta-sec .btn-hero { position: relative; font-size: 20px; padding: 20px 56px; }
+
+.cta-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 28px;
+  position: relative;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.trust-dot {
+  width: 6px;
+  height: 6px;
+  background: var(--green);
+  border-radius: 50%;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background: #060810;
+  border-top: 1px solid var(--border);
+  padding: 32px 20px;
+  text-align: center;
+}
+
+footer p { font-size: 13px; color: var(--text-muted); line-height: 2; }
+footer strong { color: #fff; }
+footer a { color: var(--purple); text-decoration: none; }
+
+/* ========== REVIEWS ========== */
+.reviews-sec { background: var(--bg-dark); }
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  transition: transform 0.25s, border-color 0.25s;
+  position: relative;
+}
+
+.review-card:hover { transform: translateY(-4px); border-color: var(--border-purple); }
+
+.review-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.review-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  font-weight: 800;
+  flex-shrink: 0;
+  color: #fff;
+}
+
+.av-a { background: linear-gradient(135deg, #2563eb, #00d4ff); }
+.av-b { background: linear-gradient(135deg, #ff3d8b, #ff6b35); }
+.av-c { background: linear-gradient(135deg, #00e676, #00d4ff); }
+.av-d { background: linear-gradient(135deg, #ffd600, #ff6b35); }
+.av-e { background: linear-gradient(135deg, #2563eb, #ff3d8b); }
+.av-f { background: linear-gradient(135deg, #00d4ff, #00e676); }
+
+.review-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.review-date {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.review-stars {
+  color: #ffd600;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.review-source {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-dim);
+  font-weight: 600;
+}
+
+.review-source img { width: 14px; height: 14px; }
+
+.reviews-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.reviews-big-num {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(90deg, var(--yellow), var(--orange));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.reviews-big-stars {
+  color: #ffd600;
+  font-size: 28px;
+  letter-spacing: 3px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.reviews-big-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.reviews-divider {
+  width: 1px;
+  height: 60px;
+  background: var(--border);
+}
+
+@media (max-width: 768px) {
+  .reviews-grid { grid-template-columns: 1fr; }
+  .reviews-divider { display: none; }
+}
+
+/* ========== BRANCHES ========== */
+.branches-sec { background: var(--bg-card2); }
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.branch-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s;
+}
+
+.branch-card:hover { transform: translateY(-6px); border-color: var(--border-purple); }
+
+.branch-map {
+  width: 100%;
+  height: 200px;
+  border: none;
+  display: block;
+  filter: grayscale(30%) contrast(1.1);
+}
+
+.branch-info {
+  padding: 20px 22px 22px;
+}
+
+.branch-badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.bb-vesu { background: rgba(37,99,235,0.15); color: #93c5fd; border: 1px solid rgba(37,99,235,0.3); }
+.bb-citylight { background: rgba(0,212,255,0.1); color: var(--cyan); border: 1px solid rgba(0,212,255,0.3); }
+.bb-pal { background: rgba(255,61,139,0.1); color: var(--pink); border: 1px solid rgba(255,61,139,0.3); }
+
+.branch-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.branch-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.branch-icon {
+  font-size: 14px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.branch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  background: linear-gradient(135deg, var(--purple), var(--cyan));
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.branch-link:hover { opacity: 0.85; transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .branches-grid { grid-template-columns: 1fr; }
+}
+
+/* ========== DIVIDER ========== */
+.divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--purple), var(--cyan));
+  border-radius: 3px;
+  margin: 0 auto 24px;
+}
+
+/* ========== REVEAL ANIMATION ========== */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.on { opacity: 1; transform: none; }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .agentic-compare { grid-template-columns: 1fr; }
+  .mod-two-col { grid-template-columns: 1fr; }
+  .cap-cards { grid-template-columns: 1fr; }
+  .assess-cards { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .agents-grid { grid-template-columns: 1fr; }
+  .mod-trigger { padding: 16px; }
+  .mod-weeks-tag { display: none; }
+  .sticky-banner .banner-logo { font-size: 13px; }
+}
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 28px; }
+  .btn-hero { padding: 16px 32px; font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY NAV -->
+<div class="sticky-banner">
+  <img src="https://futurevisioncomputers.com/wp-content/uploads/2024/07/fv-logo-final-current.png" alt="Future Vision Computer Institute" style="height:36px;width:auto;object-fit:contain;display:block;">
+  <div style="display:flex;gap:10px;align-items:center;">
+    <button class="btn-nav-pdf" onclick="downloadBrochure()">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1v9M4 7l4 4 4-4"/><rect x="2" y="12" width="12" height="2" rx="1"/></svg>
+      Brochure
+    </button>
+    <a href="#enroll" class="banner-cta">Enroll Now →</a>
+  </div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker-inner">
+    <span>🤖 Agentic AI</span>
+    <span>•</span><span>📊 Meta Ads</span>
+    <span>•</span><span>🔍 Google Ads</span>
+    <span>•</span><span>📈 SEO & Performance Max</span>
+    <span>•</span><span>🎯 GA4 & Analytics</span>
+    <span>•</span><span>✉️ Email Automation</span>
+    <span>•</span><span>💡 40 Real Projects</span>
+    <span>•</span><span>🚀 16 Weeks</span>
+    <span>•</span><span>🏆 4.9★ Google Rating</span>
+    <span>•</span>
+    <!-- duplicate for loop -->
+    <span>🤖 Agentic AI</span>
+    <span>•</span><span>📊 Meta Ads</span>
+    <span>•</span><span>🔍 Google Ads</span>
+    <span>•</span><span>📈 SEO & Performance Max</span>
+    <span>•</span><span>🎯 GA4 & Analytics</span>
+    <span>•</span><span>✉️ Email Automation</span>
+    <span>•</span><span>💡 40 Real Projects</span>
+    <span>•</span><span>🚀 16 Weeks</span>
+    <span>•</span><span>🏆 4.9★ Google Rating</span>
+    <span>•</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-glow"></div>
+
+  <div class="hero-eyebrow">
+    <span class="live-dot"></span>
+    New Batch · Surat, Gujarat · Est. 2006
+  </div>
+
+  <h1>
+    Give Me <span class="highlight">16 Weeks</span> &amp;<br>
+    You'll Run Campaigns<br>
+    Like a <span class="highlight">Marketing Agency</span>
+  </h1>
+
+  <p class="hero-sub">
+    India's first course where <strong>Agentic AI is your strategist, copywriter &amp; analyst</strong> — and you are the campaign manager who makes every final call.
+  </p>
+
+  <div class="stat-pills">
+    <div class="stat-pill">
+      <span class="pill-num">8</span>
+      <span class="pill-label">Modules</span>
+    </div>
+    <div class="stat-pill">
+      <span class="pill-num">40</span>
+      <span class="pill-label">Real Projects</span>
+    </div>
+    <div class="stat-pill">
+      <span class="pill-num">16</span>
+      <span class="pill-label">Weeks</span>
+    </div>
+    <div class="stat-pill">
+      <span class="pill-num">20+</span>
+      <span class="pill-label">AI Tools</span>
+    </div>
+    <div class="stat-pill">
+      <span class="pill-num">4.9★</span>
+      <span class="pill-label">Google Rating</span>
+    </div>
+  </div>
+
+  <div class="hero-cta-group">
+    <a href="#enroll" class="btn-hero">Yes! I Want AI Marketing Skills →</a>
+    <button class="btn-download-brochure" onclick="downloadBrochure()">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1v9M4 7l4 4 4-4"/><rect x="2" y="12" width="12" height="2" rx="1"/></svg>
+      Download Brochure PDF
+    </button>
+    <div class="hero-micro">
+      <span>✓</span> 100% Practical Training &nbsp;|&nbsp;
+      <span>✓</span> Placement Assistance &nbsp;|&nbsp;
+      <span>✓</span> Real Portfolio
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-bar-inner">
+    <div class="proof-item"><span class="proof-icon">⭐</span> 4.9 Google Rating</div>
+    <div class="proof-item"><span class="proof-icon">💬</span> 290+ Student Reviews</div>
+    <div class="proof-item"><span class="proof-icon">🏛️</span> 19+ Years in Education</div>
+    <div class="proof-item"><span class="proof-icon">📍</span> 3 Locations in Surat</div>
+    <div class="proof-item"><span class="proof-icon">🤖</span> Agentic AI Integrated</div>
+    <div class="proof-item"><span class="proof-icon">💼</span> Placement Assistance</div>
+  </div>
+</div>
+
+<!-- AGENTIC AI -->
+<section class="agentic-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">What Makes This Different</div>
+      <h2>You Don't Use AI.<br><span style="background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">You Direct It.</span></h2>
+      <p>Generative AI = prompt in, one answer out. Agentic AI = you give a goal, AI plans multi-step actions, critiques its own work, iterates — and escalates to you only when human judgment is needed.</p>
+    </div>
+
+    <div class="agentic-compare reveal">
+      <div class="cmp-box bad">
+        <div class="cmp-label">❌ Old way</div>
+        <ul class="cmp-list">
+          <li>Write one prompt, get one output, fix manually</li>
+          <li>You write all the ad copy yourself</li>
+          <li>You guess which keywords to target</li>
+          <li>You audit campaign performance by hand</li>
+          <li>You build reports line by line</li>
+          <li>AI is a tool you use occasionally</li>
+        </ul>
+      </div>
+      <div class="cmp-box good">
+        <div class="cmp-label">✅ Agentic AI way</div>
+        <ul class="cmp-list">
+          <li>Set a goal → AI plans → critiques → you approve</li>
+          <li>AI generates 5 copy variants ranked by psychology</li>
+          <li>AI clusters keywords by intent with bid priority</li>
+          <li>AI diagnoses issues and prescribes specific fixes</li>
+          <li>AI writes the narrative, you present to client</li>
+          <li>AI is a junior team member you manage daily</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-header reveal" style="margin-bottom:24px;">
+      <h2 style="font-size:clamp(22px,4vw,36px);">Meet Your AI Team</h2>
+    </div>
+
+    <div class="agents-grid reveal">
+      <div class="agent-card">
+        <div class="agent-emoji">📋</div>
+        <div>
+          <div class="agent-name">Strategy Architect Agent</div>
+          <div class="agent-desc">Describe your business → AI builds full-funnel channel strategy with budget split recommendations</div>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-emoji">✍️</div>
+        <div>
+          <div class="agent-name">Ad Copy Agent</div>
+          <div class="agent-desc">Product + audience → 5 headlines, 5 primary text variants, 3 CTAs ranked by psychology</div>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-emoji">🔍</div>
+        <div>
+          <div class="agent-name">Keyword Intent Agent</div>
+          <div class="agent-desc">Seed keywords → clustered by intent (info, nav, commercial, transactional) with bid priority</div>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-emoji">📊</div>
+        <div>
+          <div class="agent-name">Performance Audit Agent</div>
+          <div class="agent-desc">Paste campaign data → AI diagnoses what's wrong and prescribes specific optimisation actions</div>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-emoji">🧠</div>
+        <div>
+          <div class="agent-name">Competitor Intel Agent</div>
+          <div class="agent-desc">Input brand name → AI maps likely ad spend, content strategy, keyword targeting, positioning</div>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-emoji">📝</div>
+        <div>
+          <div class="agent-name">Report Narrative Agent</div>
+          <div class="agent-desc">Paste raw metrics → AI writes executive summary, insights, and recommended actions in plain English</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODULES -->
+<section class="modules-sec section-pad" id="modules">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">The Full Curriculum</div>
+      <h2>8 Modules.<br><span style="background:linear-gradient(90deg,var(--cyan),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Zero fluff.</span></h2>
+      <p>Tap any module to see exactly what you'll learn, which AI agents you'll use, and what you'll build.</p>
+    </div>
+
+    <div class="mod-list-wrap reveal">
+
+      <!-- MOD 01 -->
+      <div class="mod-item m1">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">01</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Digital Marketing Foundations + AI Strategy</span>
+            <span class="mod-sub">1 Week · 5 Projects · The mindset shift that changes everything</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">1 Week</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Full digital marketing ecosystem — owned, paid, earned, shared media</li>
+                  <li>Customer journey: awareness → consideration → conversion → advocacy</li>
+                  <li>Funnel strategy — TOFU, MOFU, BOFU and which channels serve each stage</li>
+                  <li>KPIs vs vanity metrics — what actually matters and why most reports lie</li>
+                  <li>AI-first marketing mindset — where AI replaces manual work and where it can't</li>
+                  <li>Competitor intelligence — reverse-engineer any brand's strategy using AI</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Strategy Architect</span>
+                  <span class="a-tag">Competitor Intel</span>
+                  <span class="a-tag">ICP Builder</span>
+                  <span class="a-tag">KPI Selector</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>ICP + Funnel Map</strong><span>Pick any business. AI builds 3 ICPs + full-funnel channel strategy with rationale</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Competitor Intel Report</strong><span>AI maps a real competitor's channels, positioning, ad angles, content strategy</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>KPI Dashboard Template</strong><span>AI selects the metrics, you build the tracking sheet for a fictional brand</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>Marketing Strategy Doc</strong><span>Full 1-page strategy for a product launch — AI writes first draft, you edit and present</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Channel Allocation Plan</strong><span>₹50,000/month budget — AI recommends channel split with justification</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 02 -->
+      <div class="mod-item m2">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">02</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Meta Ads — Facebook & Instagram Advertising</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Run ads that actually convert</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Ads Manager structure: campaigns, ad sets, ads hierarchy</li>
+                  <li>Campaign objectives: Awareness, Traffic, Leads, Sales, App</li>
+                  <li>Core, Custom, Lookalike, and Advantage+ audiences</li>
+                  <li>Ad formats: carousel, video, reels, stories, lead gen</li>
+                  <li>Meta Pixel, event tracking, Conversion API fundamentals</li>
+                  <li>CBO vs ABO, daily vs lifetime budgets</li>
+                  <li>Reading CPM, CTR, CPC, ROAS, frequency diagnostics</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Ad Copy Agent</span>
+                  <span class="a-tag">Audience Architect</span>
+                  <span class="a-tag">Creative Brief</span>
+                  <span class="a-tag">Performance Audit</span>
+                  <span class="a-tag">Scaling Agent</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Lead Gen Campaign</strong><span>Complete campaign for a coaching business — AI writes all copy variants</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>E-commerce Sales Campaign</strong><span>Audiences, creatives, budget structured with AI audit</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>A/B Test Design</strong><span>AI generates both creative variants, you present the test strategy</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>Campaign Performance Audit</strong><span>Diagnose fabricated Meta metrics, write optimisation report using AI</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Full Meta Campaign Playbook</strong><span>Objective → audience → creatives → budget → KPIs → testing → scaling</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 03 -->
+      <div class="mod-item m3">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">03</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Google Ads — Search, Display & Performance Max</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Own the search results</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Account structure: campaigns, ad groups, keywords, ads, extensions</li>
+                  <li>Match types: broad, phrase, exact — Quality Score and Ad Rank</li>
+                  <li>Writing RSAs: headlines, descriptions, pinning logic</li>
+                  <li>Performance Max: asset groups, audience signals, when PMax hurts</li>
+                  <li>Conversion tracking: Google Tag + GA4 integration</li>
+                  <li>Bidding: Manual CPC, Target CPA, Target ROAS, Max Conversions</li>
+                  <li>Search Terms report, negative keywords, impression share</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Keyword Intent</span>
+                  <span class="a-tag">RSA Copy</span>
+                  <span class="a-tag">Negative Keyword</span>
+                  <span class="a-tag">Bid Strategy Advisor</span>
+                  <span class="a-tag">Quality Score</span>
+                  <span class="a-tag">PMax Asset</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Search Campaign Build</strong><span>Full Search campaign for local service — AI generates all keywords + RSA copy</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Keyword Cluster Map</strong><span>50 raw keywords → AI clusters by intent, assigns to ad groups with match types</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Negative Keyword Master List</strong><span>AI generates comprehensive negative keyword list with reasoning for chosen industry</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>Performance Max Asset Group</strong><span>Complete PMax asset group — AI generates all copy, you define audience signals</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Google Ads Audit Report</strong><span>AI audits fabricated account with issues → prioritised fix list</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 04 — Website Designing -->
+      <div class="mod-item m4">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">04</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Website Designing for Conversions</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Turn visitors into leads</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Conversion design: hierarchy, trust signals, friction reduction</li>
+                  <li>Landing page anatomy: hero, value prop, social proof, CTA</li>
+                  <li>Above-the-fold — what must be visible before any scroll</li>
+                  <li>Lead gen pages vs sales pages — structure differences</li>
+                  <li>CRO fundamentals: hypotheses, tests, measurement</li>
+                  <li>Headline frameworks: AIDA, PAS, BAB with AI execution</li>
+                  <li>Mobile-first design and page speed basics</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Conversion Strategist</span>
+                  <span class="a-tag">Headline Generator</span>
+                  <span class="a-tag">CRO Hypothesis</span>
+                  <span class="a-tag">Trust Signal</span>
+                  <span class="a-tag">Copy Reviewer</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Lead Gen Landing Page</strong><span>Full landing page for a service business — AI writes all copy, you build</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Sales Page for a Course</strong><span>Long-form sales page — AI structures section by section, you design</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Homepage CRO Audit</strong><span>AI identifies conversion killers on a described homepage, prescribes fixes</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>A/B Test Design Document</strong><span>Hypothesis, variant, success metric, sample size calculation</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Full Funnel Page Set</strong><span>Ad landing + thank you + follow-up page — AI writes all copy</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 05 — SEO Keyword Research -->
+      <div class="mod-item m5">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">05</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">SEO — Keyword Research & Content Strategy</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Rank without guessing</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>How Google's algorithm works: crawling, indexing, ranking signals</li>
+                  <li>Search intent — 4 types and why intent beats keyword density</li>
+                  <li>Keyword metrics: volume, difficulty, CPC, CTR, SERP features</li>
+                  <li>Keyword clustering — topic clusters for authority building</li>
+                  <li>Content gap analysis — rank what competitors miss</li>
+                  <li>Pillar pages + topic clusters — systematic authority building</li>
+                  <li>Keyword bank and editorial content calendar from research data</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Keyword Expansion</span>
+                  <span class="a-tag">SERP Analyser</span>
+                  <span class="a-tag">Cluster Architect</span>
+                  <span class="a-tag">Content Gap</span>
+                  <span class="a-tag">Content Calendar</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Seed Keyword Expansion</strong><span>5 seeds → 100+ clustered, intent-mapped keywords for a business</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Topic Cluster Map</strong><span>Full pillar-cluster map for one topic — AI structures, you visualise</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Content Gap Report</strong><span>AI finds competitor keyword gaps, ranks by traffic opportunity</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>3-Month Content Calendar</strong><span>Full editorial calendar from approved keyword cluster — titles, formats, goals</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Keyword Strategy Presentation</strong><span>Complete strategy for fictional client — AI drafts, you refine and present</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 06 — On-Page & Technical SEO -->
+      <div class="mod-item m6">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">06</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">On-Page SEO & Technical SEO</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Fix what Google can't ignore</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Title tags, meta descriptions, H1-H6 hierarchy, URL structure</li>
+                  <li>Semantic SEO, LSI terms, readability optimisation</li>
+                  <li>Image optimisation: alt text, compression, Core Web Vitals impact</li>
+                  <li>Internal linking: anchor text, link equity, orphan page detection</li>
+                  <li>Technical SEO: crawlability, indexation, XML sitemaps, robots.txt</li>
+                  <li>Core Web Vitals: LCP, INP, CLS — diagnose and improve</li>
+                  <li>Schema markup / JSON-LD implementation + Google Search Console</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">On-Page Audit</span>
+                  <span class="a-tag">Meta Tag Generator</span>
+                  <span class="a-tag">Schema Markup</span>
+                  <span class="a-tag">Internal Link</span>
+                  <span class="a-tag">Content Optimiser</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Full On-Page SEO Audit</strong><span>AI evaluates every on-page signal, ranks fixes by impact</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Title + Meta Tag Batch</strong><span>10 pages — AI generates optimised tags, you review and approve</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Schema Markup Implementation</strong><span>JSON-LD for Article, FAQ, LocalBusiness — generated using AI</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>Internal Link Strategy Doc</strong><span>AI identifies gaps and anchor text opportunities for a 20-page site</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Technical SEO Checklist Audit</strong><span>AI produces a tiered fix report for a fabricated site with issues</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 07 -->
+      <div class="mod-item m7">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">07</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Analytics, Tracking & Reporting</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · Data that actually tells you something</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>GA4 fundamentals: events, parameters, dimensions, metrics</li>
+                  <li>GA4 goals: conversion events, key events, funnel setup</li>
+                  <li>UTM parameters: campaign tracking and attribution</li>
+                  <li>Google Tag Manager: triggers, tags, variables, GTM workflow</li>
+                  <li>Attribution models: last click, first click, linear, data-driven</li>
+                  <li>GA4 exploration: funnel, path, segment overlap reports</li>
+                  <li>Client-ready dashboards and monthly performance reports</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Data Interpreter</span>
+                  <span class="a-tag">UTM Naming</span>
+                  <span class="a-tag">Report Narrative</span>
+                  <span class="a-tag">Anomaly Detector</span>
+                  <span class="a-tag">Dashboard Design</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>GA4 Conversion Setup Plan</strong><span>Full event + conversion tracking plan for an e-commerce site</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>UTM Naming System</strong><span>Complete UTM naming convention for a multi-channel brand — AI generates and documents</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Monthly Performance Report</strong><span>AI writes full client-ready monthly report from fabricated campaign data</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>GA4 Exploration Report Build</strong><span>Funnel + path + segment overlap — 3 reports with AI guidance</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Attribution Analysis</strong><span>Last-click vs data-driven — AI explains the difference and implications</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOD 08 -->
+      <div class="mod-item m8">
+        <button class="mod-trigger" onclick="toggleMod(this)">
+          <div class="mod-badge-num">08</div>
+          <div class="mod-title-wrap">
+            <span class="mod-title">Email Marketing & Marketing Automation</span>
+            <span class="mod-sub">2 Weeks · 5 Projects · The channel that prints money</span>
+          </div>
+          <div class="mod-right">
+            <span class="mod-weeks-tag">2 Weeks</span>
+            <span class="mod-arrow">▼</span>
+          </div>
+        </button>
+        <div class="mod-body">
+          <div class="mod-content">
+            <div class="mod-two-col">
+              <div>
+                <div class="mod-section-label">What You'll Learn</div>
+                <ul class="learn-list">
+                  <li>Email fundamentals: list building, segmentation, deliverability</li>
+                  <li>Email types: welcome sequences, nurture flows, re-engagement</li>
+                  <li>Subject line psychology: curiosity, urgency, personalisation</li>
+                  <li>Email copywriting: structure, single CTA, mobile readability</li>
+                  <li>List segmentation: behaviour, demographic, lifecycle stage</li>
+                  <li>Automation workflows: triggers, conditions, branches, delays</li>
+                  <li>Email metrics: open rate, CTR, CTOR, revenue per email</li>
+                </ul>
+              </div>
+              <div>
+                <div class="mod-section-label">AI Agents Used</div>
+                <div class="agents-tags">
+                  <span class="a-tag">Email Sequence</span>
+                  <span class="a-tag">Subject Line Generator</span>
+                  <span class="a-tag">Segmentation Architect</span>
+                  <span class="a-tag">Re-engagement</span>
+                  <span class="a-tag">Email Audit</span>
+                </div>
+              </div>
+            </div>
+            <div class="proj-box">
+              <div class="proj-header">🔨 5 Projects You'll Build</div>
+              <div class="proj-row"><div class="proj-n">1</div><div><strong>Welcome Email Sequence</strong><span>5-email onboarding for a SaaS product — AI writes full copy, you review and edit</span></div></div>
+              <div class="proj-row"><div class="proj-n">2</div><div><strong>Subject Line A/B Test Set</strong><span>10 variants for one campaign — AI writes, you pick top 3 with rationale</span></div></div>
+              <div class="proj-row"><div class="proj-n">3</div><div><strong>Automation Workflow Map</strong><span>Complete lead nurture automation — triggers, branches, delays, exit conditions</span></div></div>
+              <div class="proj-row"><div class="proj-n">4</div><div><strong>Re-engagement Campaign</strong><span>3-email win-back for cold subscribers — AI writes, you present strategy</span></div></div>
+              <div class="proj-row"><div class="proj-n">5</div><div><strong>Full Email Marketing Audit</strong><span>AI identifies gaps in a fictional brand's email programme, you produce recommendations</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="tools-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">The Stack</div>
+      <h2>20+ Industry Tools.<br><span style="background:linear-gradient(90deg,var(--orange),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Day 1 ready.</span></h2>
+      <p>You won't just hear about these tools. You'll use them on real projects, with AI agents, from week one.</p>
+    </div>
+  </div>
+  <div class="tools-marquee-wrap reveal">
+    <div class="tools-track">
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" alt=""> Claude AI</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=32" alt=""> ChatGPT</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" alt=""> Google Gemini</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=32" alt=""> Google AI Studio</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=notebooklm.google.com&sz=32" alt=""> NotebookLM</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" alt=""> Gemini Omni</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=32" alt=""> Canva AI</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt=""> Google Ads</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=facebook.com&sz=32" alt=""> Meta Ads Manager</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=analytics.google.com&sz=32" alt=""> GA4</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=tagmanager.google.com&sz=32" alt=""> Google Tag Manager</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=search.google.com&sz=32" alt=""> Search Console</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=32" alt=""> Mailchimp</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=semrush.com&sz=32" alt=""> Semrush</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=ahrefs.com&sz=32" alt=""> Ahrefs</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=32" alt=""> Zapier</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=notion.so&sz=32" alt=""> Notion AI</div>
+      <!-- duplicate for loop -->
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=claude.ai&sz=32" alt=""> Claude AI</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&sz=32" alt=""> ChatGPT</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" alt=""> Google Gemini</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=aistudio.google.com&sz=32" alt=""> Google AI Studio</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=notebooklm.google.com&sz=32" alt=""> NotebookLM</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=32" alt=""> Gemini Omni</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=canva.com&sz=32" alt=""> Canva AI</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=ads.google.com&sz=32" alt=""> Google Ads</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=facebook.com&sz=32" alt=""> Meta Ads Manager</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=analytics.google.com&sz=32" alt=""> GA4</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=tagmanager.google.com&sz=32" alt=""> Google Tag Manager</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=search.google.com&sz=32" alt=""> Search Console</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=mailchimp.com&sz=32" alt=""> Mailchimp</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=semrush.com&sz=32" alt=""> Semrush</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=ahrefs.com&sz=32" alt=""> Ahrefs</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=zapier.com&sz=32" alt=""> Zapier</div>
+      <div class="tool-pill"><img src="https://www.google.com/s2/favicons?domain=notion.so&sz=32" alt=""> Notion AI</div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPSTONE -->
+<section class="capstone-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <h2>Not an exam.<br>
+        <span style="background:linear-gradient(90deg,var(--purple),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">A portfolio piece.</span><br>
+        <span style="background:linear-gradient(90deg,var(--orange),var(--yellow));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:0.6em;letter-spacing:0.04em;">Week 16 — The Final Project.</span>
+      </h2>
+      <p>Pick a real or realistic business. Apply every module's skills. AI is your marketing director. You make the final calls. Deliver a client-ready document.</p>
+    </div>
+
+    <div class="cap-cards reveal">
+      <div class="cap-card ca">
+        <span class="cap-emoji-big">🚀</span>
+        <div class="cap-opt-tag">Option A</div>
+        <h3>Full-Funnel Campaign Launch</h3>
+        <p>ICP → keyword strategy → Google Ads → Meta Ads → landing page → email sequence → tracking → reporting dashboard. Delivered as a client-ready pitch deck.</p>
+      </div>
+      <div class="cap-card cb">
+        <span class="cap-emoji-big">📈</span>
+        <div class="cap-opt-tag">Option B</div>
+        <h3>SEO Growth Plan</h3>
+        <p>Keyword research → topic cluster → on-page audit → 6-month content calendar → technical SEO checklist → backlink strategy. AI builds research, you present the roadmap.</p>
+      </div>
+      <div class="cap-card cc">
+        <span class="cap-emoji-big">🎯</span>
+        <div class="cap-opt-tag">Option C</div>
+        <h3>Agency Client Simulation</h3>
+        <p>AI plays a demanding client with a brief, budget, and goals. You produce a strategy, defend it, receive AI critique, revise twice, submit as a real agency deliverable.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASSESSMENT -->
+<section class="assess-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">How You're Graded</div>
+      <h2>Skills, not<br><span style="background:linear-gradient(90deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">certificates.</span></h2>
+    </div>
+
+    <div class="assess-cards reveal">
+      <div class="assess-card">
+        <div class="assess-pct a55">55%</div>
+        <div>
+          <h4>Module Projects</h4>
+          <p>5 projects × 8 modules = 40 real deliverables. Every single one goes straight into your portfolio.</p>
+        </div>
+      </div>
+      <div class="assess-card">
+        <div class="assess-pct a25">25%</div>
+        <div>
+          <h4>Capstone Campaign</h4>
+          <p>A live-ready deliverable — not an exam. Goes into your portfolio, not a drawer.</p>
+        </div>
+      </div>
+      <div class="assess-card">
+        <div class="assess-pct a15">15%</div>
+        <div>
+          <h4>AI Prompt Quality</h4>
+          <p>You submit conversation logs. Weak prompts score low regardless of creative output. This trains the most employable skill in modern marketing: directing AI precisely.</p>
+        </div>
+      </div>
+      <div class="assess-card">
+        <div class="assess-pct a5">5%</div>
+        <div>
+          <h4>Peer Campaign Critique</h4>
+          <p>Review classmate campaigns. Learn to give and receive strategic feedback like an agency pro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY DIFFERENT -->
+<section class="why-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">Why This Hits Different</div>
+      <h2>Built for the<br><span style="background:linear-gradient(90deg,var(--green),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">AI-native generation.</span></h2>
+    </div>
+
+    <div class="why-grid reveal">
+      <div class="why-card">
+        <div class="why-icon-box">🎯</div>
+        <h4>AI Has a Job Title</h4>
+        <p>In every module, AI is assigned as strategist, copywriter, auditor, or analyst. Never optional decoration.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">📊</div>
+        <h4>Data First, Then AI</h4>
+        <p>You learn to read data before using AI to interpret it. No blind automation of bad strategy.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">💼</div>
+        <h4>40 Portfolio Projects</h4>
+        <p>Every student graduates with 40 real deliverables — not certificates. Agencies hire portfolios.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">🚀</div>
+        <h4>Agency-Ready From Day 1</h4>
+        <p>Meta + Google platform training means you can work in agencies, freelance, or in-house immediately after graduating.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">🤝</div>
+        <h4>You Manage AI, Not Vice Versa</h4>
+        <p>Agentic AI framing means you treat AI as a junior team member you direct — not a magic answer machine.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon-box">🏆</div>
+        <h4>19 Years. Surat's Finest.</h4>
+        <p>Future Vision Computer Institute. Est. 2006. 4.9★ on Google. 290+ reviews. Real instructors, real results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">Student Reviews</div>
+      <h2>290+ students.<br><span style="background:linear-gradient(90deg,var(--yellow),var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Real results.</span></h2>
+      <p>Straight from our Google Business Profile. Every review is from a real student.</p>
+    </div>
+
+    <div class="reviews-summary reveal">
+      <div style="text-align:center;">
+        <div class="reviews-big-num">4.9</div>
+        <span class="reviews-big-stars">★★★★★</span>
+        <div class="reviews-big-label">Average Google Rating</div>
+      </div>
+      <div class="reviews-divider"></div>
+      <div style="text-align:center;">
+        <div class="reviews-big-num" style="font-size:48px;">290+</div>
+        <div class="reviews-big-label" style="margin-top:8px;">Verified Google Reviews</div>
+      </div>
+      <div class="reviews-divider"></div>
+      <div style="text-align:center;">
+        <div class="reviews-big-num" style="font-size:48px;">19+</div>
+        <div class="reviews-big-label" style="margin-top:8px;">Years Educating Surat</div>
+      </div>
+    </div>
+
+    <div class="reviews-grid reveal">
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-a">R</div>
+          <div>
+            <div class="review-name">Riya Mehta</div>
+            <div class="review-date">2 months ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"Joined for digital marketing and ended up learning Meta Ads, Google Ads, and SEO all in one place. The practical projects are real — not just theory. Got placed within 3 weeks of completing the course."</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-b">K</div>
+          <div>
+            <div class="review-name">Kartik Patel</div>
+            <div class="review-date">1 month ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"Best institute in Surat for digital marketing. Trainers are very experienced and the curriculum is updated. The AI tools they teach are actually used by companies right now. Highly recommend Future Vision."</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-c">P</div>
+          <div>
+            <div class="review-name">Priya Shah</div>
+            <div class="review-date">3 months ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"I was a complete beginner. After 4 months at Future Vision, I am now running ads for 3 clients as a freelancer. The hands-on training and placement support made all the difference. Thank you team FV!"</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-d">D</div>
+          <div>
+            <div class="review-name">Dhruv Desai</div>
+            <div class="review-date">5 months ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"The Google Ads and Meta Ads modules are extremely in-depth. I've taken online courses on Udemy before — nothing comes close to the live project experience here. Worth every rupee."</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-e">N</div>
+          <div>
+            <div class="review-name">Nidhi Joshi</div>
+            <div class="review-date">2 months ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"SEO training here is next level. Learned keyword research, on-page, technical SEO and even schema markup. The AI tools integration into every topic is what makes FV stand out in 2025."</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-top">
+          <div class="review-avatar av-f">A</div>
+          <div>
+            <div class="review-name">Arjun Kapoor</div>
+            <div class="review-date">6 months ago</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">"I run a small business in Surat. After this course I handle all my own marketing — Meta ads, Google ads, website SEO, email campaigns. Saved ₹40,000/month in agency fees. Best investment ever."</div>
+        <div class="review-source">
+          <img src="https://www.google.com/s2/favicons?domain=google.com&sz=16" alt="Google"> Posted on Google
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec" id="enroll">
+  <div class="cta-glow-orb"></div>
+  <div class="container">
+    <h2>
+      Your future employer uses AI<br>
+      every single day.<br>
+      <span style="background:linear-gradient(90deg,var(--purple),var(--cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Do you?</span>
+    </h2>
+    <p>16 weeks. 40 projects. 1 career-defining skill set. Surat's most hands-on AI marketing program.</p>
+    <a href="https://futurevisioncomputers.com/computer-courses-surat/digital-marketing-with-marketing-strategies-business-automation/" class="btn-hero">
+      Enroll Now — New Batch Starting →
+    </a>
+    <div class="cta-trust-row">
+      <div class="trust-item"><span class="trust-dot"></span> Surat · Vesu | Citylight | Pal</div>
+      <div class="trust-item"><span class="trust-dot"></span> 100% Practical Training</div>
+      <div class="trust-item"><span class="trust-dot"></span> Placement Assistance</div>
+      <div class="trust-item"><span class="trust-dot"></span> 4.9★ Google Rating</div>
+      <div class="trust-item"><span class="trust-dot"></span> Est. 2006</div>
+    </div>
+  </div>
+</section>
+
+<!-- HIDDEN BROCHURE FOR PDF EXPORT -->
+<div id="brochure-print">
+
+  <!-- PAGE 1: Cover + Modules -->
+  <div class="br-page">
+    <div class="br-header">
+      <div class="br-logo-block">
+        <img src="https://futurevisioncomputers.com/wp-content/uploads/2024/07/fv-logo-final-current.png" alt="Future Vision Computer Institute" style="height:44px;width:auto;object-fit:contain;display:block;margin-bottom:6px;">
+        <div class="br-est">Est. 2006 · Surat, Gujarat · 3 Locations · 4.9★ Google</div>
+      </div>
+      <div class="br-badge">New Batch 2026</div>
+    </div>
+
+    <div class="br-hero-title">Digital Marketing &amp; SEO<br><span>with Agentic AI</span></div>
+    <div class="br-tagline">India's first course where Agentic AI is your strategist, copywriter &amp; analyst — and you are the campaign manager who makes every final call. 16 weeks. 40 real projects. Portfolio-first learning.</div>
+
+    <div class="br-stats-row">
+      <div class="br-stat"><span class="br-stat-num">16</span><span class="br-stat-label">Weeks</span></div>
+      <div class="br-stat"><span class="br-stat-num">8</span><span class="br-stat-label">Modules</span></div>
+      <div class="br-stat"><span class="br-stat-num">40</span><span class="br-stat-label">Real Projects</span></div>
+      <div class="br-stat"><span class="br-stat-num">20+</span><span class="br-stat-label">AI Tools</span></div>
+      <div class="br-stat"><span class="br-stat-num">4.9★</span><span class="br-stat-label">Google Rating</span></div>
+    </div>
+
+    <div class="br-sec-title">Course Modules</div>
+    <div class="br-module-list">
+      <div class="br-mod">
+        <div class="br-mod-num">Module 01</div>
+        <div class="br-mod-name">Digital Marketing Foundations + Agentic AI Strategy</div>
+        <div class="br-mod-weeks">Week 1</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 02</div>
+        <div class="br-mod-name">Meta Ads — Facebook &amp; Instagram Advertising</div>
+        <div class="br-mod-weeks">Weeks 2–3</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 03</div>
+        <div class="br-mod-name">Google Ads — Search, Display &amp; Performance Max</div>
+        <div class="br-mod-weeks">Weeks 4–5</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 04</div>
+        <div class="br-mod-name">Website Designing for Conversions</div>
+        <div class="br-mod-weeks">Weeks 6–7</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 05</div>
+        <div class="br-mod-name">SEO — Keyword Research &amp; Content Strategy</div>
+        <div class="br-mod-weeks">Weeks 8–9</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 06</div>
+        <div class="br-mod-name">On-Page SEO &amp; Technical SEO</div>
+        <div class="br-mod-weeks">Weeks 10–11</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 07</div>
+        <div class="br-mod-name">Analytics, Tracking &amp; Reporting — GA4 + GTM</div>
+        <div class="br-mod-weeks">Weeks 12–13</div>
+      </div>
+      <div class="br-mod">
+        <div class="br-mod-num">Module 08</div>
+        <div class="br-mod-name">Email Marketing &amp; Marketing Automation</div>
+        <div class="br-mod-weeks">Weeks 14–15</div>
+      </div>
+      <div class="br-mod" style="grid-column:1/-1;border-color:#dbeafe;">
+        <div class="br-mod-num" style="color:#ff3d8b;">Module 09 — Capstone</div>
+        <div class="br-mod-name">Full Agentic AI Campaign Deployment — Client-Ready Portfolio Piece</div>
+        <div class="br-mod-weeks">Week 16</div>
+      </div>
+    </div>
+
+    <div class="br-sec-title">Career Outcomes</div>
+    <div class="br-why-grid" style="margin-bottom:24px;">
+      <div class="br-why-item">
+        <div class="br-why-icon">💼</div>
+        <div class="br-why-title">Digital Marketing Executive</div>
+        <div class="br-why-desc">₹3–6 LPA starting · Agency or in-house</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">📈</div>
+        <div class="br-why-title">Paid Media Specialist</div>
+        <div class="br-why-desc">Google + Meta certified · ₹4–8 LPA</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🚀</div>
+        <div class="br-why-title">Freelance Consultant</div>
+        <div class="br-why-desc">₹500–₹2000/hr · Work from anywhere</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🔍</div>
+        <div class="br-why-title">SEO Analyst</div>
+        <div class="br-why-desc">Technical + content SEO · ₹3–7 LPA</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🤖</div>
+        <div class="br-why-title">AI Marketing Manager</div>
+        <div class="br-why-desc">Emerging role · ₹6–12 LPA growth path</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🎯</div>
+        <div class="br-why-title">Start Your Own Agency</div>
+        <div class="br-why-desc">Portfolio + skills to serve clients from day 1</div>
+      </div>
+    </div>
+
+    <div class="br-footer">
+      <div class="br-footer-left">
+        <strong>futurevisioncomputers.com</strong><br>
+        Vesu | Citylight | Pal · Surat, Gujarat
+      </div>
+      <div class="br-footer-right">
+        Enroll Now<br>
+        <small>New batch forming</small>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE 2: Tools + Assessment + Why Different -->
+  <div class="br-page">
+    <div class="br-header">
+      <div class="br-logo-block">
+        <img src="https://futurevisioncomputers.com/wp-content/uploads/2024/07/fv-logo-final-current.png" alt="Future Vision Computer Institute" style="height:36px;width:auto;object-fit:contain;display:block;margin-bottom:4px;">
+        <div class="br-est">Digital Marketing &amp; SEO with Agentic AI — Course Brochure</div>
+      </div>
+      <div class="br-badge">2026 Curriculum</div>
+    </div>
+
+    <div class="br-sec-title">AI Tools You'll Master</div>
+    <div class="br-tools-wrap">
+      <span class="br-tool-tag">ChatGPT</span>
+      <span class="br-tool-tag">Claude AI</span>
+      <span class="br-tool-tag">Gemini</span>
+      <span class="br-tool-tag">Perplexity</span>
+      <span class="br-tool-tag">Midjourney</span>
+      <span class="br-tool-tag">Google Ads</span>
+      <span class="br-tool-tag">Meta Ads Manager</span>
+      <span class="br-tool-tag">GA4</span>
+      <span class="br-tool-tag">Looker Studio</span>
+      <span class="br-tool-tag">Semrush</span>
+      <span class="br-tool-tag">Ahrefs</span>
+      <span class="br-tool-tag">Screaming Frog</span>
+      <span class="br-tool-tag">Mailchimp</span>
+      <span class="br-tool-tag">Zapier</span>
+      <span class="br-tool-tag">Make (Integromat)</span>
+      <span class="br-tool-tag">Canva AI</span>
+      <span class="br-tool-tag">Notion AI</span>
+      <span class="br-tool-tag">Buffer</span>
+      <span class="br-tool-tag">Hotjar</span>
+      <span class="br-tool-tag">Search Console</span>
+    </div>
+
+    <div class="br-sec-title">Assessment Breakdown</div>
+    <div class="br-assess-row">
+      <div class="br-assess-item">
+        <span class="br-assess-pct">55%</span>
+        <div class="br-assess-label">Module Projects<br>(40 Deliverables)</div>
+      </div>
+      <div class="br-assess-item">
+        <span class="br-assess-pct">25%</span>
+        <div class="br-assess-label">Capstone Campaign</div>
+      </div>
+      <div class="br-assess-item">
+        <span class="br-assess-pct">15%</span>
+        <div class="br-assess-label">AI Prompt Quality</div>
+      </div>
+      <div class="br-assess-item">
+        <span class="br-assess-pct">5%</span>
+        <div class="br-assess-label">Peer Critique</div>
+      </div>
+    </div>
+
+    <div class="br-sec-title">Batch Details &amp; Contact</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:24px;">
+      <div class="br-why-item">
+        <div class="br-why-icon">📅</div>
+        <div class="br-why-title">Duration</div>
+        <div class="br-why-desc">16 Weeks · Weekend &amp; Weekday batches available</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🏫</div>
+        <div class="br-why-title">Mode</div>
+        <div class="br-why-desc">Classroom · 3 Centres in Surat (Vesu, Citylight, Pal)</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">📞</div>
+        <div class="br-why-title">Call / WhatsApp</div>
+        <div class="br-why-desc">Contact us to confirm batch start date &amp; seat availability</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🌐</div>
+        <div class="br-why-title">Website</div>
+        <div class="br-why-desc">futurevisioncomputers.com · Est. 2006 · 4.9★ Google</div>
+      </div>
+    </div>
+
+    <div class="br-sec-title">Why Future Vision?</div>
+    <div class="br-why-grid">
+      <div class="br-why-item">
+        <div class="br-why-icon">🎯</div>
+        <div class="br-why-title">AI Has a Job Title</div>
+        <div class="br-why-desc">In every module, AI is assigned a role — never optional decoration.</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">📊</div>
+        <div class="br-why-title">Data First, Then AI</div>
+        <div class="br-why-desc">Learn to read data before using AI to interpret it. No blind automation.</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">💼</div>
+        <div class="br-why-title">40 Portfolio Projects</div>
+        <div class="br-why-desc">Graduate with 40 real deliverables. Agencies hire portfolios, not certificates.</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🚀</div>
+        <div class="br-why-title">Agency-Ready</div>
+        <div class="br-why-desc">Work in agencies, freelance, or in-house immediately after graduating.</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🤝</div>
+        <div class="br-why-title">You Manage AI</div>
+        <div class="br-why-desc">Treat AI as a junior team member you direct — not a magic answer machine.</div>
+      </div>
+      <div class="br-why-item">
+        <div class="br-why-icon">🏆</div>
+        <div class="br-why-title">19 Years. Surat's Finest.</div>
+        <div class="br-why-desc">Est. 2006. 4.9★ on Google. 290+ reviews. Real instructors, real results.</div>
+      </div>
+    </div>
+
+    <div class="br-footer">
+      <div class="br-footer-left">
+        <strong>Future Vision Computer Institute</strong><br>
+        Vesu | Citylight | Pal · Surat, Gujarat · Est. 2006<br>
+        futurevisioncomputers.com
+      </div>
+      <div class="br-footer-right">
+        Visit Website<br>
+        <small>futurevisioncomputers.com</small>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BRANCHES -->
+<section class="branches-sec section-pad">
+  <div class="container">
+    <div class="sec-header reveal">
+      <div class="sec-tag">Find Us</div>
+      <h2>3 Centres.<br><span style="background:linear-gradient(90deg,var(--cyan),var(--green));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">All across Surat.</span></h2>
+      <p>Walk in at any branch — same curriculum, same instructors, same 4.9★ quality.</p>
+    </div>
+
+    <div class="branches-grid reveal">
+
+      <!-- VESU -->
+      <div class="branch-card">
+        <iframe class="branch-map"
+          src="https://www.google.com/maps?q=G-48+J9+High+Street+Canal+Road+Vesu+Surat&output=embed"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="branch-info">
+          <div class="branch-badge bb-vesu">Branch 01</div>
+          <div class="branch-name">Vesu</div>
+          <div class="branch-detail">
+            <span class="branch-icon">📍</span>
+            <span>G-48, J9 High Street, Canal Road, Vesu, Surat</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">🕐</span>
+            <span>Mon–Sat · 10:00 AM – 7:00 PM</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">📞</span>
+            <span>+91 98257 71678</span>
+          </div>
+          <a href="https://www.google.com/maps/search/Future+Vision+Computer+Institute+J9+High+Street+Vesu+Surat" target="_blank" class="branch-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- CITYLIGHT -->
+      <div class="branch-card">
+        <iframe class="branch-map"
+          src="https://www.google.com/maps?q=G-40+Navmangalam+Complex+Citylight+Surat&output=embed"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="branch-info">
+          <div class="branch-badge bb-citylight">Branch 02</div>
+          <div class="branch-name">Citylight</div>
+          <div class="branch-detail">
+            <span class="branch-icon">📍</span>
+            <span>G-40, Navmangalam Complex, Opp. Agrasen Bhavan, Citylight, Surat</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">🕐</span>
+            <span>Mon–Sat · 10:00 AM – 7:00 PM</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">📞</span>
+            <span>+91 98257 71678</span>
+          </div>
+          <a href="https://www.google.com/maps/search/Future+Vision+Computer+Institute+Navmangalam+Complex+Citylight+Surat" target="_blank" class="branch-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+      <!-- PAL -->
+      <div class="branch-card">
+        <iframe class="branch-map"
+          src="https://www.google.com/maps?q=115+Raj+Victoria+Complex+Pal+Gam+Circle+Pal+Surat&output=embed"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <div class="branch-info">
+          <div class="branch-badge bb-pal">Branch 03</div>
+          <div class="branch-name">Pal</div>
+          <div class="branch-detail">
+            <span class="branch-icon">📍</span>
+            <span>115, Raj Victoria Complex, Pal Gam Circle, Pal, Surat</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">🕐</span>
+            <span>Mon–Sat · 10:00 AM – 7:00 PM</span>
+          </div>
+          <div class="branch-detail">
+            <span class="branch-icon">📞</span>
+            <span>+91 98257 71641</span>
+          </div>
+          <a href="https://www.google.com/maps/search/Future+Vision+Computer+Institute+Raj+Victoria+Complex+Pal+Surat" target="_blank" class="branch-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Get Directions
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>
+    <strong>Future Vision Computer Institute</strong><br>
+    Vesu | Citylight | Pal · Surat, Gujarat · Est. 2006<br>
+    <a href="https://futurevisioncomputers.com">futurevisioncomputers.com</a>
+  </p>
+</footer>
+
+<script>
+// BROCHURE PDF DOWNLOAD — captures full page with all accordions open
+function downloadBrochure() {
+  const allBtns = document.querySelectorAll('.btn-download-brochure, .btn-nav-pdf');
+  allBtns.forEach(b => { b.disabled = true; b._orig = b.innerHTML; b.innerHTML = '⏳ Generating PDF...'; });
+
+  // 1. Open every accordion
+  const modItems = document.querySelectorAll('.mod-item');
+  modItems.forEach(el => el.classList.add('open'));
+
+  // 2. Temporarily hide non-content elements
+  const hideTargets = document.querySelectorAll(
+    '.sticky-banner, .ticker-wrap, .btn-download-brochure, .btn-nav-pdf, #brochure-print'
+  );
+  hideTargets.forEach(el => { el._origDisplay = el.style.display; el.style.display = 'none'; });
+
+  // 3. Remove body top padding caused by fixed nav
+  document.body.style.paddingTop = '0';
+
+  // 4. Scroll to top so capture starts from beginning
+  window.scrollTo(0, 0);
+
+  const opt = {
+    margin:      [8, 0, 8, 0],
+    filename:    'FutureVision-DigitalMarketing-AI-Course.pdf',
+    image:       { type: 'jpeg', quality: 0.95 },
+    html2canvas: { scale: 1.5, useCORS: true, logging: false, scrollY: 0, windowWidth: 1200 },
+    jsPDF:       { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    pagebreak:   { mode: ['avoid-all'] }
+  };
+
+  function restore() {
+    modItems.forEach(el => el.classList.remove('open'));
+    hideTargets.forEach(el => { el.style.display = el._origDisplay || ''; });
+    document.body.style.paddingTop = '';
+    allBtns.forEach(b => { b.disabled = false; b.innerHTML = b._orig; });
+  }
+
+  html2pdf().set(opt).from(document.body).save().then(restore).catch(restore);
+}
+
+// MODULE TOGGLE
+function toggleMod(btn) {
+  const item = btn.closest('.mod-item');
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.mod-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// SCROLL REVEAL
+const revealEls = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('on'), i * 80);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.08 });
+
+revealEls.forEach(el => observer.observe(el));
+
+// SMOOTH ANCHOR
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
